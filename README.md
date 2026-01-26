@@ -17,3 +17,18 @@ Instead of showing all available matches, the app displays only the games relate
 
 ## Project status
 🚧 In progress
+
+## Design Process
+
+The initial MVP design was created in Figma, focusing on:
+- Clear user flow
+- Simple loading and empty states
+- Desktop-first layout
+
+Screens included:
+- Home page
+- Results page
+- Loading state
+- Empty state
+
+Design files and exports are available in the `/design` folder.
