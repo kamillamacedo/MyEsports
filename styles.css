@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    background-color: #F3F4F6;
+}
+.hero{
+    height: 560px;
+    min-height: 55vh;
+    max-height: 650px;
+
+    width: 100%;
+    background-image:url(Design/Img/Hero.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home__card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 380px;   
+    padding: 16px;
+    gap:10px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    margin-top: 24px;
+
+}
+.home__card__options{
+    font-size: 14px;
+}
+.home__card__inputs{
+    font-size: 14px
+}
