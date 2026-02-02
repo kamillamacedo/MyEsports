@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,47 +11,102 @@ main{
     background-color: #F3F4F6;
 }
 .hero{
-    height: 560px;
-    min-height: 55vh;
-    max-height: 650px;
+    position: relative;
+    height: 70vh;
+    min-height: 45vh;
+    max-height: 400px;
 
     width: 100%;
-    background-image:url(Design/Img/Hero.png);
+    background-image:url(./design/assets/Hero.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 
-    display: flex;
-    align-items: center;
 }
 
 .hero-container{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
     padding: 64px 16px;
-    color: white;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+
+    outline: 2px dashed red
+
 }
 
-.home__card{
+.hero-text{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    padding: 8vh;
+    gap: 50px;
+
+    outline: 2px solid blue;
+}
+
+.hero-text__title{
+    color:rgba(255, 255, 255, 1);
+    font-size: 42px;
+}
+
+.hero-text__subtitle{
+    color:rgba(221, 221, 221, 0.9);
+    font-size: 18px;
+}
+
+.home-card{
     display: flex;
     flex-direction: column;
+    
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translateX(-50%);
+
     background-color: white;
-    color: black;
-    width: 380px;   
+    width: 380px;  
     padding: 16px;
     gap:10px;
     border-radius: 16px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
     margin-top: 24px;
 
 }
-.home__card__options{
+.home-card__options{
+    color: black;
     font-size: 14px;
+    font-family: "Inter", sans-serif;
 }
-.home__card__inputs{
-    font-size: 14px
+.home-card__inputs{
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #6B7280;
+    background-color: #F3F4F6;
+    padding: 10px;
+}
+
+.home-card__viewbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 348px;
+    background-color: #4F46E5;
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.home-card__viewbutton:hover{
+    background-color: #5b2eff;
+    font-weight: 800;
 }
