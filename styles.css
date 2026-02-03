@@ -10,7 +10,7 @@ header{
     height: auto;
     max-height: fit-content;
     align-items: center;
-    gap:53%;
+    gap:54%;
     padding: 1vh 2vh;
     border: 1px solid rgba(136, 128, 128, 0.7);
 }
@@ -32,13 +32,13 @@ header{
     color: #6B7280;
     padding: 5px 15px;
     border-radius: 20px;
-    border: #6B7280;
+    border: none;
 
     font-family: "Inter", sans-serif;
     font-size: 18px;
     text-align: end;
-
 }
+
 
 .header__menu__link{
     font-family: "Inter", sans-serif;
@@ -80,7 +80,7 @@ header{
 
 .hero-container{
     max-width: 100%;
-    padding: 64px 16px;
+    padding: 2%;
 
     display: flex;
     flex-direction: column;
@@ -112,14 +112,14 @@ header{
     flex-direction: column;
     
     position: absolute;
-    top:70%;
+    top:60%;
     left:50%;
     transform: translateX(-50%);
 
     background-color: #FFFFFF;
     width: 380px;  
     padding: 16px;
-    gap:10px;
+    gap:13px;
     border-radius: 16px;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
     margin-top: 24px;
@@ -137,6 +137,7 @@ header{
     background-color: #F3F4F6;
     padding: 10px;
     border-radius: 8px;
+    border: none;
 }
 
 .home-card__viewbutton{
