@@ -5,8 +5,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    display: flex;
+    height: auto;
+    max-height: fit-content;
+    align-items: center;
+    gap:53%;
+    padding: 1vh 2vh;
+    border: 1px solid rgba(136, 128, 128, 0.7);
+}
 
-main{
+.header__logo{
+    width: auto;
+    max-width: 9%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.header__menu__searchbar{
+    background-image: url(./design/assets/1magnifying-glass-1976105_1280.png) no-repeat left center fixed;
+    background-color: #F3F4F6;
+    color: #6B7280;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: #6B7280;
+
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    text-align: end;
+
+}
+
+.header__menu__link{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #161343;
+
+}
+
+.header__menu__login{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+
+    background-color: #161343;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+.home{
     width: 100%;
     background-color: #F3F4F6;
 }
@@ -32,17 +86,15 @@ main{
     flex-direction: column;
     gap: 15px;
 
-    outline: 2px dashed red
 
 }
 
 .hero-text{
-    font-size: 18px;
     font-family: "Inter", sans-serif;
-    padding: 8vh;
+    font-size: 18px;
+    padding: 5%;
     gap: 50px;
 
-    outline: 2px solid blue;
 }
 
 .hero-text__title{
@@ -64,7 +116,7 @@ main{
     left:50%;
     transform: translateX(-50%);
 
-    background-color: white;
+    background-color: #FFFFFF;
     width: 380px;  
     padding: 16px;
     gap:10px;
@@ -84,6 +136,7 @@ main{
     color: #6B7280;
     background-color: #F3F4F6;
     padding: 10px;
+    border-radius: 8px;
 }
 
 .home-card__viewbutton{
@@ -91,6 +144,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 10px;
     width: 348px;
     background-color: #4F46E5;
     padding: 12px 16px;
@@ -109,4 +163,10 @@ main{
 .home-card__viewbutton:hover{
     background-color: #5b2eff;
     font-weight: 800;
+
+}
+
+.home-card__viewbutton__eyeicon{
+    width: auto;
+    max-width: 9%;
 }
