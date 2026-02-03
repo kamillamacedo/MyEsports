@@ -11,7 +11,7 @@ header{
     max-height: fit-content;
     align-items: center;
     gap:54%;
-    padding: 1vh 2vh;
+    padding: 1vh 3vh;
     border: 1px solid rgba(136, 128, 128, 0.7);
 }
 
@@ -39,6 +39,9 @@ header{
     text-align: end;
 }
 
+.header__menu__searchbar:hover{
+    background-color: #dadce0
+}
 
 .header__menu__link{
     font-family: "Inter", sans-serif;
@@ -80,20 +83,17 @@ header{
 
 .hero-container{
     max-width: 100%;
-    padding: 2%;
 
     display: flex;
     flex-direction: column;
-    gap: 15px;
+
 
 
 }
 
 .hero-text{
     font-family: "Inter", sans-serif;
-    font-size: 18px;
-    padding: 5%;
-    gap: 50px;
+    padding: 4% 6%;
 
 }
 
@@ -112,14 +112,14 @@ header{
     flex-direction: column;
     
     position: absolute;
-    top:60%;
+    top:50%;
     left:50%;
     transform: translateX(-50%);
 
     background-color: #FFFFFF;
     width: 380px;  
-    padding: 16px;
-    gap:13px;
+    padding: 15px;
+    gap:12px;
     border-radius: 16px;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
     margin-top: 24px;
@@ -138,6 +138,10 @@ header{
     padding: 10px;
     border-radius: 8px;
     border: none;
+}
+
+.home-card__inputs:hover{
+    background-color: #dadce0
 }
 
 .home-card__viewbutton{
