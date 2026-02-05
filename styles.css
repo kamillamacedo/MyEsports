@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --background-color: #E3E1EB;
+    --primary-color: #FFFFFF;
+    --secondary-color: #161343;
+    --tertiary-color: #4F46E5;
+    --quaternary-color: #6B7280;
+
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Bakbak One", sans-serif;
+}
+
 
 *{
     margin: 0;
@@ -28,14 +40,14 @@ header{
 }
 
 .header__menu__searchbar{
-    background-image: url(./design/assets/1magnifying-glass-1976105_1280.png) no-repeat left center fixed;
-    background-color: #F3F4F6;
-    color: #6B7280;
+    background-image: url(./assets/1magnifying-glass-1976105_1280.png) no-repeat left center fixed;
+    background-color: var(--background-color);
+    color: var(--quaternary-color);
     padding: 5px 15px;
     border-radius: 20px;
     border: none;
 
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font);
     font-size: 18px;
     text-align: end;
 }
@@ -45,57 +57,52 @@ header{
 }
 
 .header__menu__link{
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font);
     font-size: 20px;
     font-weight: 800;
-    color: #161343;
+    color: var(--secondary-color);
+    text-decoration: none;
 
 }
 
 .header__menu__login{
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font);;
     font-size: 20px;
     font-weight: 800;
 
-    background-color: #161343;
-    color: #FFFFFF;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 5px 10px;
     border-radius: 10px;
+    text-decoration: none;
 
 }
 
 .home{
-    background-color: #F3F4F6;
+    background-color: var(--background-color);
     height: auto;
 }
 .hero{
-    position: relative;
-    height: 45vh;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 
     width: 100%;
-    background-image:url(./design/assets/Hero.png);
+    background-image:url(./assets/Hero.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-
-}
-
-.hero-container{
-    display: flex;
-    flex-direction: column;
-    
-    /* outline: 2px dashed red; */
-
 }
 
 .hero-text{
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font);
     padding: 4% 6%;
 
 }
 
 .hero-text__title{
-    color:rgba(255, 255, 255, 1);
+    color:var(--primary-color);
     font-size: 42px;
 }
 
@@ -104,35 +111,38 @@ header{
     font-size: 18px;
 }
 
+.home-card__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh 5vh 5vh 5vh;
+
+}
+
 .home-card{
     display: flex;
     flex-direction: column;
-    
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translateX(-50%);
 
-    background-color: #FFFFFF;
+    background-color: var(--primary-color);
     width: 380px;  
-    height: fit-content;
+    height: auto;
     padding: 15px;
     gap:12px;
     border-radius: 16px;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
     margin-top: 24px;
-
 }
+
 .home-card__options{
     color: black;
     font-size: 14px;
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font);
 }
 .home-card__inputs{
     font-size: 14px;
-    font-family: "Inter", sans-serif;
-    color: #6B7280;
-    background-color: #F3F4F6;
+    font-family: var(--primary-font);
+    color: var(--quaternary-color);
+    background-color: var(--background-color);
     padding: 10px;
     border-radius: 8px;
     border: none;
@@ -149,14 +159,14 @@ header{
     gap: 10px;
     padding: 10px;
     width: 348px;
-    background-color: #4F46E5;
+    background-color: var(--tertiary-color);
     padding: 12px 16px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 
-    color: #FFFFFF;
+    color: var(--primary-color);
     text-decoration: none;
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font);
     font-weight: bold;
     font-size: 15px;
     text-align: center;
@@ -174,17 +184,14 @@ header{
     max-width: 9%;
 }
 
-.hero-spacer{
-    height: 280px;
-    background-color: #F3F4F6;
-}
-
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #161343;
+    height: auto;
+    min-height: 12vh;
+    background-color: var(--secondary-color);
 
     padding: 8px;
     gap: 3%;
@@ -197,11 +204,88 @@ footer{
 
 .footer__links{
     display: flex;
-    color: #FFFFFF;
+    color: var(--primary-color);
 
-    font-family: "Inter", sans-serif;
+    font-family: var(--primary-font);
     text-align: center;
     font-size: 12px;
     gap:25px
 
+}
+
+.results-card__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.results-card{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--primary-color);
+    width: 380px;  
+    height: fit-content;
+    padding: 15px;
+    margin: 5%;
+    gap:12px;
+    border-radius: 16px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+    margin-top: 24px;
+}
+
+.results-card__date{
+    font-family: var(--primary-font);
+    font-weight: 800;
+}
+
+.results-card__matches{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    background-color: var(--secondary-color);
+    border: solid 13px var(--secondary-color);
+    border-radius: 8px;
+    gap: 13px;
+
+    font-family: var(--secondary-font);
+
+}
+
+.results-card__matches-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: var(--primary-color);
+
+}
+
+.results-card__matches__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.results-card__matches__info__time{
+    color: var(--tertiary-color);
+    font-size: 35px;
+}
+
+.results-card__matches__info__versus{
+    color: var(--quaternary-color);
+    font-size: 16px;
+
+
+}
+
+.results-card__matches__championship{
+    background-color: #E3E1EB;
+    color: var(--quaternary-color);
+
+    text-align: center;
 }
