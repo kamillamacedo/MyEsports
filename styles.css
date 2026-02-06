@@ -21,16 +21,23 @@
 header{
     display: flex;
     height: auto;
-    max-height: fit-content;
+    justify-content: space-between;
     align-items: center;
-    gap:54%;
+    gap:auto;
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+
+    max-height: 7vh;
+    width: 100vw;
+
     padding: 1vh 3vh;
     border: 1px solid rgba(136, 128, 128, 0.7);
 }
 
 .header__logo{
     width: auto;
-    max-width: 9%;
+    max-width: 9vw;
 }
 
 .header__menu{
@@ -48,7 +55,7 @@ header{
     border: none;
 
     font-family: var(--primary-font);
-    font-size: 18px;
+    font-size: 1.12rem;
     text-align: end;
 }
 
@@ -58,7 +65,7 @@ header{
 
 .header__menu__link{
     font-family: var(--primary-font);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--secondary-color);
     text-decoration: none;
@@ -67,7 +74,7 @@ header{
 
 .header__menu__login{
     font-family: var(--primary-font);;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
 
     background-color: var(--secondary-color);
@@ -87,6 +94,7 @@ header{
     display: flex;
     flex-direction: column;
     height: auto;
+    margin-top: 3%;
 
     width: 100%;
     background-image:url(./assets/Hero.png);
@@ -103,19 +111,19 @@ header{
 
 .hero-text__title{
     color:var(--primary-color);
-    font-size: 42px;
+    font-size: 2.62rem;
 }
 
 .hero-text__subtitle{
     color:rgba(221, 221, 221, 0.9);
-    font-size: 18px;
+    font-size: 1.12rem;
 }
 
 .home-card__container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1vh 5vh 5vh 5vh;
+    margin: 1% 3% 3% 3%;
 
 }
 
@@ -135,11 +143,11 @@ header{
 
 .home-card__options{
     color: black;
-    font-size: 14px;
+    font-size: 0.87rem;
     font-family: var(--primary-font);
 }
 .home-card__inputs{
-    font-size: 14px;
+    font-size: 0.87rem;
     font-family: var(--primary-font);
     color: var(--quaternary-color);
     background-color: var(--background-color);
@@ -168,7 +176,7 @@ header{
     text-decoration: none;
     font-family: var(--primary-font);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 0.93rem;
     text-align: center;
 
 }
@@ -208,7 +216,7 @@ footer{
 
     font-family: var(--primary-font);
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     gap:25px
 
 }
@@ -257,7 +265,6 @@ footer{
 .results-card__matches-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 
     background-color: var(--primary-color);
 
@@ -273,12 +280,12 @@ footer{
 
 .results-card__matches__info__time{
     color: var(--tertiary-color);
-    font-size: 35px;
+    font-size: 2.18rem;
 }
 
 .results-card__matches__info__versus{
     color: var(--quaternary-color);
-    font-size: 16px;
+    font-size: 1rem;
 
 
 }
