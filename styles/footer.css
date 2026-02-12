@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: var(--secondary-color);
+
+    padding: 8px;
+    gap: 3%;
+}
+
+.footer__logo {
+    width: 7%;
+
+}
+
+.footer__links {
+    display: flex;
+    color: var(--primary-color);
+
+    font-family: var(--primary-font);
+    text-align: center;
+    font-size: 0.75rem;
+    gap: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 569px) {
+
+    footer{
+        height: 3rem;
+    }
+    
+}

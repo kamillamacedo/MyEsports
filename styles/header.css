@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+
+    height: 7vh;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid rgba(136, 128, 128, 0.7);
+}
+
+.header__logo {
+    min-width: 6%;
+    width: auto;
+    max-width: 40%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.header__menu__searchbar {
+    background-color: var(--background-color);
+    color: var(--quaternary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    width: 70%;
+
+}
+
+.header__menu__searchbar::placeholder{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    text-align: end;
+    background: url("../assets/SmallGrayMagnifyingglass2.png") no-repeat;
+}
+
+
+.header__menu__searchbar:hover {
+    background-color: #dadce0
+}
+
+.header__menu__link {
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#login-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.4rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 6rem;
+}
+
+@media (max-width: 569px) {
+    
+    header{
+        height: 3rem;
+    }
+
+    .header__menu__link{
+        font-size: 0.7rem;
+    }
+
+    .header__menu__searchbar{
+        font-size: 0.7rem;
+        width: 20%;
+    }
+
+
+}
