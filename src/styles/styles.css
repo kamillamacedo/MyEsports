@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url(./styles/header.css);
-@import url(./styles/footer.css);
+@import url(./header.css);
+@import url(./footer.css);
 
 :root {
     --background-color: #f6f6fa;
@@ -35,7 +35,7 @@ main {
     height: 13rem;
 
 
-    background-image: url(./assets/Hero.png);
+    background-image: url(/assets/Hero.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
